@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <h1> update </h1>
+</head>
+<body style="background: linear-gradient(90deg, #60EFFF 10%, #0061FF 90%);">
+    <form method="post", action=".">
+        {% csrf_token %}
+    
+        {{ form.as_p }}     
+    </form>
+</body>
+</html>
+
+// render form as paragraph, doing this so that '<label for' gets checked successfully 

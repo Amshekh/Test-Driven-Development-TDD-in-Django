@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <h1 style="text-align: center; color: goldenrod; font-family: Arial;"> Welcome to TDD using Django </h1>
+</head>
+<body style="background: linear-gradient(90deg, #60EFFF 10%, #0061FF 90%);">
+    {% for task in tasks %}
+        <p>
+            {{ task.title }}
+        </p>    
+    {% endfor %}
+</body>
+</html>
